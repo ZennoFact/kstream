@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>K STREAM!!</title>
     <script src="./js/library/jquery-2.1.3.min.js"></script>
+    <script src="./js/setting.js"></script>
     <script src="https://skyway.io/dist/0.3/peer.js"></script>
   </head>
   <body>
@@ -15,7 +16,7 @@
                            navigator.webkitGetUserMedia ||
                            navigator.mozGetUserMedia ||
                            navigator.msGetUserMedia;
-      var peer = new Peer({key: '405bf42c-a370-423f-a923-07820ec6032d'});
+      var peer = new Peer({key: API_KEY});
       peer.on("error", function(e) {
         console.log(e);
       });

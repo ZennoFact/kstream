@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>K STREAM!! | 配信者側</title>
     <script src="./js/library/jquery-2.1.3.min.js"></script>
+    <script src="./js/setting.js"></script>
   </head>
   <body>
-
+    <h1><?php echo getHostByName(php_uname('n')) ?></h1>
     <div id="video_box" width="100%" height="100%"></div>
 
     <script src="https://skyway.io/dist/0.3/peer.js"></script>
@@ -15,7 +16,7 @@
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia ||
                          navigator.msGetUserMedia;
-      var peer = new Peer("256", {key: '405bf42c-a370-423f-a923-07820ec6032d'});
+      var peer = new Peer("256", {key: API_KEY});
       navigator.getUserMedia({audio: true, video: true}, function (stream) {
         console.log(stream);
         peer.on("call", function(call) {
