@@ -12,13 +12,20 @@
   <body>
     <h1>現在，前納の動画を配信中</h1>
     <h2>学校の無線LANに繋いで「http://10.41.0.54/kstream/audience.php」にアクセス</h2>
-    <div>
-      <video id="video_box" autoplay="autoplay" width="500px" height="250px">
-    </div>
-    <canvas id="canvas" width="500px" height="250px">
-    <input type="text" class="comment">
-    <button class="btn" value="">Send</button>
-
+    <article>
+      <div class="box video">
+        <div class="item">
+          <video id="video_box" autoplay="autoplay">
+        </div>
+        <div class="item">
+          <canvas id="canvas">
+        </div>
+      </div>
+      <div class="box send">
+        <input type="text" class="comment">
+        <button class="btn" value="">Send</button>
+      </div>
+    </article>
 
     <script src="./js/system.js"></script>
     <script>

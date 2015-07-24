@@ -1,0 +1,35 @@
+article {
+  width: 300px;
+  margin: 20px auto;
+}
+.box {
+  width: inherit;
+  margin-bottom: 10px;
+  margin: auto;
+}
+.video {
+  height: 200px;
+  margin: 20px auto;
+
+  position: relative;
+}
+.send {
+  width: 280px;
+  height: 80px;
+  margin: 0 auto;
+}
+.item {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 25px;
+}
+#video_box, #canvas {
+  width: 250px;
+  height: 187px;
+}
+
+#canvas {
+
+}

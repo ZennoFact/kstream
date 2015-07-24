@@ -4,9 +4,11 @@ $(function(){
   comment = $('.comment');
 });
 
+var words = [];
+
 function onDown() {
   var cmnt = comment.val();
   if ( cmnt !== "") {
-    console.log(comment.val());
+    words.push(comment.val());
   }
 }

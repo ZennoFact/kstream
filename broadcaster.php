@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1><?php echo getHostByName(php_uname('n')) ?></h1>
-    <div id="video_box" width="100%" height="100%"></div>
+    <div id="video_box" width="25%" height="25%"></div>
 
     <script src="https://skyway.io/dist/0.3/peer.js"></script>
     <script>
