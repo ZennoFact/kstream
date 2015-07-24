@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>K STREAM!!</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/audience.css">
     <script src="./js/library/jquery-2.1.3.min.js"></script>
     <script src="./js/setting.js"></script>
     <script src="https://skyway.io/dist/0.3/peer.js"></script>
   </head>
   <body>
     <h1>現在，前納の動画を配信中</h1>
-    <video id="video_box" autoplay="autoplay" width="500px" height="250px">
+    <h2>学校の無線LANに繋いで「http://10.41.0.54/kstream/audience.php」にアクセス</h2>
+    <div>
+      <video id="video_box" autoplay="autoplay" width="500px" height="250px">
+    </div>
+    <canvas id="canvas" width="500px" height="250px">
+    <input type="text" class="comment">
+    <button class="btn" value="">Send</button>
 
+
+    <script src="./js/system.js"></script>
     <script>
       navigator.getUserMedia = navigator.getUserMedia ||
                            navigator.webkitGetUserMedia ||
